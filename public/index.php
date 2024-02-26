@@ -44,6 +44,17 @@ require __DIR__.'/../vendor/autoload.php';
 |
 */
 
+$users = [
+    [
+        'name' => 'rady',
+        'posts' => ['Hello !', 'Good bye !'],
+    ],
+    [
+        'name' => 'him',
+        'posts' => ['How are you ?', 'I love mangos !'],
+    ],
+];
+
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
 $kernel = $app->make(Kernel::class);
